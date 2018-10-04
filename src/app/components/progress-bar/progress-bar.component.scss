@@ -1,0 +1,30 @@
+
+.progress-outer {
+    width: 95.5%!important;
+    margin: 10px 2%;
+    padding: 3px;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+  }
+  
+  .progress-inner {
+    min-width: 10%;
+    max-width:98.8%!important;
+    white-space: nowrap;
+    overflow: hidden;
+    // padding: 0px;
+    border-radius: 2px;
+    padding: 5px;
+    width: 12%;
+    background-image: linear-gradient(to right,#125E6F, #1CA1C0);
+    color: #ffffff;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .progress-inner {
+      min-width: 17%;
+    }
+  }

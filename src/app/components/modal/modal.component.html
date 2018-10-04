@@ -1,0 +1,18 @@
+<div class='modal' [(hidden)]='!show'>
+  <div class='mask'></div>
+  <div class='dialog-box'>
+    <div class='header'>
+      <h3>{{ title }}</h3>
+    </div>
+    <div class='content'>
+      <ng-content></ng-content>
+    </div>
+    <div class='buttonBar'>
+      <button *ngIf='secondaryButtonText !== undefined' class='au-btn au-btn--block au-btn--secondary' (click)="secondaryClicked()">
+        {{ secondaryButtonText }}</button>
+      <button *ngIf='primaryButtonText !== undefined' class='au-btn au-btn--block au-btn-modal' (click)="primaryClicked()">
+        {{ primaryButtonText }}
+      </button>
+    </div>
+  </div>
+</div>
